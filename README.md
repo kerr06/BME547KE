@@ -1,1 +1,3 @@
-# BME547KE
+# Health Database Example Readme
+
+Author: Kerry Eller 
