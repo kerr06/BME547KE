@@ -2,7 +2,8 @@ def input_weight_entry():
     print("Enter patient weight in form of ## units (e.g., 105.3 lb)")
     weight_input = input("Enter weight: ")
     weight_in_kg = parse_weight_input(weight_input)
-    print("The patient weight of {} kg will be stored in database.".format(weight_in_kg))
+    print("The patient weight of {} kg will be stored in"
+        "database.".format(weight_in_kg))
 
 
 def parse_weight_input(weight_input):
