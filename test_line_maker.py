@@ -19,9 +19,9 @@ def test_line_maker(x1, y1, x2, y2, expected_slope):
     (-1, 5, -.25, 4.75),
     (-1.5, -1.1, 1.13, 0.6)
     ])
-def test_line_maker(x1, y1, x2, y2, expected_intercept):
+def test_line_maker(x1, y1, slope, expected_intercept):
     from line_maker import calc_intercept
-    intercept = calc_intercept(x1, y1, x2, y2)
+    intercept = calc_intercept(x1, y1, slope)
     assert intercept == pytest.approx(expected_intercept)
 
 
