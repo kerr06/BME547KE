@@ -14,10 +14,10 @@ def test_line_maker(x1, y1, x2, y2, expected_slope):
     assert slope == pytest.approx(expected_slope)
 
 
-@pytest.mark.parametrize("x1, y1, x2, y2, expected_intercept", [
-    (1, 2, 3, 4, 1),
-    (-1, 5, 3, 4, 4.75),
-    (-1.5, -1.1, 3, 4, 0.6)
+@pytest.mark.parametrize("x1, y1, slope, expected_intercept", [
+    (1, 2, 1, 1),
+    (-1, 5, -.25, 4.75),
+    (-1.5, -1.1, 1.13, 0.6)
     ])
 def test_line_maker(x1, y1, x2, y2, expected_intercept):
     from line_maker import calc_intercept
